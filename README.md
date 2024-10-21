@@ -8,7 +8,7 @@ Create directories
 
 Init the base manifest
 
-	$ repo init -u https://github.com/yaap/manifest.git -b fourteen --git-lfs
+	$ repo init -u https://github.com/yaap/manifest.git -b fourteen --git-lfs --depth=1
   
 Add the local manifest
 
