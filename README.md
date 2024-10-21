@@ -1,28 +1,30 @@
-YAAP for Samsung Galaxy A71
+RisingOS for Samsung Galaxy A71
 ------------------------------------
 
 Create directories
-
-	$ mkdir yaap
-	$ cd yaap
+```bash
+mkdir rising
+cd rising
+```
 
 Init the base manifest
 
-	$ repo init -u https://github.com/yaap/manifest.git -b fourteen --git-lfs --depth=1
+```bash
+repo init -u https://github.com/RisingTechOSS/android -b fourteen --git-lfs
+```
   
 Add the local manifest
 
   Take the xml file for your device and copy it to .repo/local_manifests/
 
 Then sync up with this command:
-
-	$ repo sync -j$(nproc --all) --no-tags --no-clone-bundle --current-branch 
-
+```bash
+repo sync -c --no-clone-bundle --optimized-fetch --prune --force-sync -j$(nproc --all)
+```
 -------------
  
 _Building from source_
 ---------------
-
-	$ . build/envsetup.sh
-	$ lunch yaap_a71-ap2a-userdebug
-	$ m yaap
+```bash
+riseup a71 userdebug
+```
