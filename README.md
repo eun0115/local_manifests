@@ -18,7 +18,7 @@ cd ..
 
 Then sync up with this command:
 ```bash
-repo sync -c --no-clone-bundle --optimized-fetch --prune --force-sync -j$(nproc --all)
+repo sync -j$(nproc --all) --no-tags --no-clone-bundle --current-branch 
 ```
 -------------
  
