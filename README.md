@@ -11,11 +11,10 @@ Init the base manifest
 
 ```bash
 repo init -u https://github.com/RisingTechOSS/android -b fourteen --git-lfs --depth=1
+cd .repo 
+git clone https://github.com/eun0115/local_manifests
+cd ..
 ```
-  
-Add the local manifest
-
-  Take the xml file for your device and copy it to .repo/local_manifests/
 
 Then sync up with this command:
 ```bash
