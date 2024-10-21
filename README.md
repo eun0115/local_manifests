@@ -10,7 +10,7 @@ cd rising
 Init the base manifest
 
 ```bash
-repo init -u https://github.com/RisingTechOSS/android -b fourteen --git-lfs
+repo init -u https://github.com/RisingTechOSS/android -b fourteen --git-lfs --depth=1
 ```
   
 Add the local manifest
