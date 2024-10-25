@@ -12,7 +12,7 @@ Init the base manifest
 ```bash
 repo init -u https://github.com/RisingTechOSS/android -b fourteen --git-lfs --depth=1
 cd .repo 
-git clone https://github.com/eun0115/local_manifests
+git clone https://github.com/eun0115/local_manifest
 cd ..
 ```
 
