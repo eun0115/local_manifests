@@ -1,29 +1,31 @@
-RisingOS for Samsung Galaxy A71
+Derpfest for Samsung Galaxy A71
 ------------------------------------
 
 Create directories
 ```bash
-mkdir rising
-cd rising
+mkdir derp
+cd derp
 ```
 
 Init the base manifest
 
 ```bash
-repo init -u https://github.com/RisingTechOSS/android -b fourteen --git-lfs --depth=1
+repo init -u https://github.com/DerpFest-AOSP/manifest.git -b 14 --depth=1
 cd .repo 
-git clone https://github.com/eun0115/local_manifest
+git clone https://github.com/eun0115/local_manifests
 cd ..
 ```
 
 Then sync up with this command:
 ```bash
-repo sync -j$(nproc --all) --no-tags --no-clone-bundle --current-branch 
+repo sync -c --force-sync --optimized-fetch --no-tags --no-clone-bundle --prune -j$(nproc --all)
 ```
 -------------
  
 _Building from source_
 ---------------
 ```bash
-riseup a71 userdebug
+. build/envsetup.sh
+lunch derp_a71-userdebug
+mka derp
 ```
