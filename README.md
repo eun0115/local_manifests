@@ -3,14 +3,14 @@ Derpfest for Samsung Galaxy A71
 
 Create directories
 ```bash
-mkdir halcyon
-cd halcyon
+mkdir evox
+cd evox
 ```
 
 Init the base manifest
 
 ```bash
-repo init -u https://github.com/halcyonproject/manifest -b 14.3 --git-lfs --depth=1
+repo init -u https://github.com/Evolution-X/manifest -b udc --git-lfs --depth=1
 cd .repo 
 git clone https://github.com/eun0115/local_manifests
 cd ..
@@ -26,6 +26,6 @@ _Building from source_
 ---------------
 ```bash
 . build/envsetup.sh
-lunch halcyon_a71-ap2a-userdebug
-make carthage -j$(nproc --all)
+lunch lineage_a71-userdebug
+m evolution -j$(nproc --all)
 ```
