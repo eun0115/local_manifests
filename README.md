@@ -1,6 +1,14 @@
-Device Trees for Samsung Galaxy A71
+Derpfest for Samsung Galaxy A71
 ------------------------------------
+
+Create directories
+```bash
+mkdir halcyon
+cd halcyon
+```
+
 Init the base manifest
+
 ```bash
 repo init -u https://github.com/halcyonproject/manifest -b 14.3 --git-lfs --depth=1
 cd .repo 
@@ -10,10 +18,10 @@ cd ..
 
 Then sync up with this command:
 ```bash
-repo sync -c --force-sync --optimized-fetch --no-tags --no-clone-bundle --prune -j4
+repo sync -c --force-sync --optimized-fetch --no-tags --no-clone-bundle --prune -j$(nproc --all)
 ```
 -------------
- 
+
 _Building from source_
 ---------------
 ```bash
