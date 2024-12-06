@@ -5,5 +5,5 @@
   <project name="RisingTechOSS-devices/kernel_samsung_a71" path="kernel/samsung/a71" remote="github" revision="lineage-22" />
   <project name="RisingTechOSS-devices/vendor_samsung_a71" path="vendor/samsung/a71" remote="github" revision="lineage-22" />
   <project name="RisingTechOSS-devices/vendor_samsung_a71-common" path="vendor/samsung/a71-common" remote="github" revision="lineage-22" />
-  <project name="LineageOS/android_hardware_samsung" path="hardware/samsung" remote="github" revision="lineage-22" />
+  <project name="LineageOS/android_hardware_samsung" path="hardware/samsung" remote="github" revision="lineage-21" />
 </manifest>
