@@ -1,16 +1,16 @@
-RisingOS for Samsung Galaxy A71
+EvolutionX for Samsung Galaxy A71
 ------------------------------------
 
 Create directories
 ```bash
-mkdir rising
-cd rising
+mkdir evox
+cd evox
 ```
 
 Init the base manifest
 
 ```bash
-repo init -u https://github.com/RisingTechOSS/android -b fourteen --git-lfs --depth=1
+repo init -u https://github.com/Evolution-X/manifest -b vic --git-lfs--depth=1
 cd .repo 
 git clone https://github.com/eun0115/local_manifests
 cd ..
@@ -19,6 +19,10 @@ cd ..
 Then sync up with this command:
 ```bash
 repo sync -c --force-sync --optimized-fetch --no-tags --no-clone-bundle --prune -j4
+git clone https://github.com/Evolution-X/vendor_evolution-priv_keys-template vendor/evolution-priv/keys
+cd vendor/evolution-priv/keys
+./keys.sh
+cd ../../..
 ```
 -------------
 
