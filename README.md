@@ -10,7 +10,7 @@ cd evox
 Init the base manifest
 
 ```bash
-repo init -u https://github.com/Evolution-X/manifest -b vic --git-lfs--depth=1
+repo init -u https://github.com/Evolution-X/manifest -b vic --git-lfs --depth=1
 cd .repo 
 git clone https://github.com/eun0115/local_manifests
 cd ..
