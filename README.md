@@ -1,16 +1,16 @@
-EvolutionX for Samsung Galaxy A71
+YAAP for Samsung Galaxy A71
 ------------------------------------
 
 Create directories
 ```bash
-mkdir evox
-cd evox
+mkdir yaap
+cd yaap
 ```
 
 Init the base manifest
 
 ```bash
-repo init -u https://github.com/Evolution-X/manifest -b vic --git-lfs --depth=1
+repo init -u https://github.com/yaap/manifest.git -b fifteen --git-lfs --depth=1
 cd .repo 
 git clone https://github.com/eun0115/local_manifests
 cd ..
@@ -18,18 +18,23 @@ cd ..
 
 Then sync up with this command:
 ```bash
-repo sync -c --force-sync --optimized-fetch --no-tags --no-clone-bundle --prune -j4
-git clone https://github.com/Evolution-X/vendor_evolution-priv_keys-template vendor/evolution-priv/keys
-cd vendor/evolution-priv/keys
-./keys.sh
-cd ../../..
+repo sync -c -j66 --force-sync --no-clone-bundle --no-tags --optimized-fetch
+```
+-------------
+
+Then sign the rom with this command:
+```bash
+subject='/C=US/ST=State/L=City/O=Android/OU=Android/CN=Android/emailAddress=email@example.com' 
+for x in releasekey platform shared media networkstack verity otakey testkey sdk_sandbox bluetooth nfc; do
+    ./development/tools/make_key vendor/yaap/signing/keys/$x "$subject";
+done
 ```
 -------------
 
 _Building from source_
 ---------------
 ```bash
-. build/envsetup.sh
-riseup a71 userdebug
-rise b
+source build/envsetup.sh
+lunch yaap_a71-userdebug
+m yaap
 ```
