@@ -24,6 +24,8 @@ repo sync -c -j66 --force-sync --no-clone-bundle --no-tags --optimized-fetch
 
 Then sign with this command:
 ```bash
+. build/envsetup.sh
+riseup a71 userdebug
 gk -s
 ```
 -------------
