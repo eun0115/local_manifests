@@ -11,9 +11,7 @@ Init the base manifest
 
 ```bash
 repo init -u https://github.com/yaap/manifest.git -b fifteen --git-lfs --depth=1
-cd .repo 
-git clone https://github.com/eun0115/local_manifests -b yaap
-cd ..
+git clone https://github.com/eun0115/local_manifests -b yaap .repo/local_manifests
 ```
 
 Then sync up with this command:
