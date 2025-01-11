@@ -18,7 +18,7 @@ cd ..
 
 Then sync up with this command:
 ```bash
-repo sync -c -j66 --force-sync --no-clone-bundle --no-tags --optimized-fetch
+repo sync -c -j4 --force-sync --no-clone-bundle --no-tags --optimized-fetch
 ```
 -------------
 
