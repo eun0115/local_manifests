@@ -16,7 +16,7 @@ git clone https://github.com/eun0115/local_manifests -b yaap .repo/local_manifes
 
 Then sync up with this command:
 ```bash
-repo sync -c -j4 --force-sync --no-clone-bundle --no-tags --optimized-fetch
+repo sync -c -j64 --force-sync --no-clone-bundle --no-tags --optimized-fetch
 ```
 -------------
 
