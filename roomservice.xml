@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <project name="eun0115/android_device_samsung_a71" path="device/samsung/a71" remote="github" revision="yaap" />
-  <project name="eun0115/android_device_samsung_a71-common" path="device/samsung/a71-common" remote="github" revision="yaap" />
-  <project name="eun0115/android_kernel_samsung_a71" path="kernel/samsung/a71" remote="github" revision="lineage-22" />
-  <project name="eun0115/proprietary_vendor_samsung_a71" path="vendor/samsung/a71" remote="github" revision="lineage-22" />
-  <project name="eun0115/proprietary_vendor_samsung_a71-common" path="vendor/samsung/a71-common" remote="github" revision="lineage-22" />
-  <project name="eun0115/android_hardware_samsung" path="hardware/samsung" remote="github" revision="lineage-22.1" />
+  <project name="yaap/device_samsung_a71" path="device/samsung/a71" remote="github" revision="fifteen" />
+  <project name="yaap/device_samsung_a71-common" path="device/samsung/a71-common" remote="github" revision="fifteen" />
+  <project name="yaap/kernel_samsung_a71" path="kernel/samsung/a71" remote="github" revision="fifteen" />
+  <project name="yaap/vendor_samsung_a71" path="vendor/samsung/a71" remote="github" revision="fifteen" />
+  <project name="yaap/vendor_samsung_a71-common" path="vendor/samsung/a71-common" remote="github" revision="fifteen" />
+  <project name="yaap/hardware_samsung" path="hardware/samsung" remote="github" revision="fifteen" />
   <project name="cyberknight777/android_packages_apps_FastCharge" path="packages/apps/FastCharge" remote="github" revision="master" />
 </manifest>
