@@ -32,6 +32,6 @@ _Building from source_
 ---------------
 ```bash
 . build/envsetup.sh
-lunch lineage_m20lte-ap4a-userdebug
+lunch lineage_m20lte-ap2a-userdebug
 make bacon
 ```
