@@ -16,7 +16,7 @@ git clone https://github.com/eun0115/local_manifests -b yaap .repo/local_manifes
 
 Then sync up with this command:
 ```bash
-repo sync -c -j64 --force-sync --no-clone-bundle --no-tags --optimized-fetch
+repo sync -j$(nproc --all) --no-tags --no-clone-bundle --current-branch
 ```
 -------------
 
@@ -33,6 +33,6 @@ _Building from source_
 ---------------
 ```bash
 . build/envsetup.sh
-lunch yaap_a71-userdebug
+lunch yaap_a71-user
 m yaap
 ```
