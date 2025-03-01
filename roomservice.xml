@@ -6,5 +6,5 @@
   <project name="yaap/vendor_samsung_a71" path="vendor/samsung/a71" remote="github" revision="fifteen" />
   <project name="yaap/vendor_samsung_a71-common" path="vendor/samsung/a71-common" remote="github" revision="fifteen" />
   <project name="yaap/hardware_samsung" path="hardware/samsung" remote="github" revision="fifteen" />
-  <project name="cyberknight777/android_packages_apps_FastCharge" path="packages/apps/FastCharge" remote="github" revision="master" />
+  <project name="yaap/packages_apps_FastCharge" path="packages/apps/FastCharge" remote="github" revision="master" />
 </manifest>
