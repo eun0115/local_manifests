@@ -1,10 +1,10 @@
-YAAP for Samsung Galaxy A71
+BlissROM for Samsung Galaxy A71
 ------------------------------------
 
 Create directories
 ```bash
-mkdir pos
-cd pos
+mkdir bliss
+cd bliss
 ```
 
 Init the base manifest
