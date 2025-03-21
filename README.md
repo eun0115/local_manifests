@@ -3,15 +3,15 @@ YAAP for Samsung Galaxy A71
 
 Create directories
 ```bash
-mkdir yaap
-cd yaap
+mkdir pos
+cd pos
 ```
 
 Init the base manifest
 
 ```bash
-repo init -u https://github.com/yaap/manifest.git -b fifteen --git-lfs --depth=1
-git clone https://github.com/eun0115/local_manifests -b yaap .repo/local_manifests
+repo init -u https://github.com/BlissRoms/stable_releases.git -b refs/tags/v18.3-stable-voyager --git-lfs --depth=1
+git clone https://github.com/eun0115/local_manifests -b fifteen .repo/local_manifests
 ```
 
 Then sync up with this command:
@@ -22,10 +22,7 @@ repo sync -j$(nproc --all) --no-tags --no-clone-bundle --current-branch
 
 Then sign with this command:
 ```bash
-subject='/C=PH/ST=Philippines/L=Manila/O=eun0115/OU=eun0115/CN=eun0115/emailAddress=gianpaoloestacio5@gmail.com' 
-for x in releasekey platform shared media networkstack verity otakey testkey sdk_sandbox bluetooth nfc; do
-    ./development/tools/make_key vendor/yaap/signing/keys/$x "$subject";
-done
+wget https://raw.githubusercontent.com/306bobby-android/crDroid-build-signed-script/main/create-signed-env.sh ; chmod +x create-signed-env.sh ; ./create-signed-env.sh
 ```
 -------------
 
@@ -33,6 +30,5 @@ _Building from source_
 ---------------
 ```bash
 . build/envsetup.sh
-lunch yaap_a71-user
-m yaap
+blissify -g a71
 ```
