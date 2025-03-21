@@ -18,9 +18,17 @@ cd ..
 
 Then sync up with this command:
 ```bash
-repo sync -c --force-sync --optimized-fetch --no-tags --no-clone-bundle --prune -j4
+repo sync -j$(nproc --all) --no-tags --no-clone-bundle --current-branch
 ```
 -------------
+
+Then sign with this command:
+```bash
+git clone https://github.com/Evolution-X/vendor_evolution-priv_keys-template vendor/evolution-priv/keys ; cd vendor/evolution-priv/keys ; ./keys.sh ; cd ../../..
+```
+-------------
+
+
 
 _Building from source_
 ---------------
