@@ -3,14 +3,14 @@ BlissROM for Samsung Galaxy A71
 
 Create directories
 ```bash
-mkdir bliss
-cd bliss
+mkdir los
+cd los
 ```
 
 Init the base manifest
 
 ```bash
-repo init -u https://github.com/BlissRoms/stable_releases.git -b refs/tags/v18.3-stable-voyager --git-lfs --depth=1
+repo init -u https://github.com/LineageOS/android.git -b lineage-22.1 --git-lfs --depth=1
 git clone https://github.com/eun0115/local_manifests -b fifteen .repo/local_manifests
 ```
 
@@ -34,5 +34,6 @@ _Building from source_
 ---------------
 ```bash
 . build/envsetup.sh
-blissify -g a71
+lunch lineage_a71-userdebug
+make bacon
 ```
