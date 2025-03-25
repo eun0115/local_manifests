@@ -1,4 +1,4 @@
-BlissROM for Samsung Galaxy A71
+LineageOS for Samsung Galaxy A71
 ------------------------------------
 
 Create directories
