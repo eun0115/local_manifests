@@ -16,7 +16,7 @@ git clone https://github.com/eun0115/local_manifests -b fifteen .repo/local_mani
 
 Then sync up with this command:
 ```bash
-repo sync -j$(nproc --all) --no-tags --no-clone-bundle --current-branch
+repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags --optimized-fetch --prune
 ```
 -------------
 
