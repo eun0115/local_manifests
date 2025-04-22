@@ -16,7 +16,7 @@ git clone https://github.com/eun0115/local_manifests -b yaap .repo/local_manifes
 
 Then sync up with this command:
 ```bash
-repo sync -j$(nproc --all) --no-tags --no-clone-bundle --current-branch
+repo sync -j$(nproc --all) --no-tags --no-clone-bundle --current-branch -v
 ```
 -------------
 
