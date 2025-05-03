@@ -6,4 +6,5 @@
   <project name="eun0115/proprietary_vendor_samsung_a71" path="vendor/samsung/a71" remote="github" revision="lineage-22.2" />
   <project name="eun0115/proprietary_vendor_samsung_a71-common" path="vendor/samsung/a71-common" remote="github" revision="lineage-22.2" />
   <project name="LineageOS/android_hardware_samsung" path="hardware/samsung" remote="github" revision="lineage-22.2" />
+  <project name="eun0115/vendor_lineage-priv_keys" path="vendor/lineage-priv/keys" remote="github" revision="main" />
 </manifest>
