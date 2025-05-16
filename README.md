@@ -3,14 +3,14 @@ LineageOS for Samsung Galaxy A71
 
 Create directories
 ```bash
-mkdir los
-cd los
+mkdir crd
+cd crd
 ```
 
 Init the base manifest
 
 ```bash
-repo init -u https://github.com/LineageOS/android.git -b lineage-22.2 --git-lfs --depth=1
+repo init -u https://github.com/crdroidandroid/android.git -b 15.0 --git-lfs --depth=1
 git clone https://github.com/eun0115/local_manifests -b fifteen .repo/local_manifests
 ```
 
