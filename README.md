@@ -1,4 +1,4 @@
-LineageOS for Samsung Galaxy A71
+LineageOS for Samsung Galaxy A70
 ------------------------------------
 
 Create directories
@@ -11,7 +11,7 @@ Init the base manifest
 
 ```bash
 repo init -u https://github.com/crdroidandroid/android.git -b 15.0 --git-lfs --depth=1
-git clone https://github.com/eun0115/local_manifests -b yes .repo/local_manifests 
+git clone https://github.com/eun0115/local_manifests -b a70q .repo/local_manifests 
 ```
 
 Then sync up with this command:
