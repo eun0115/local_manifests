@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+    <remote name="gitlab" fetch="https://gitlab.com/" />
+
     <project name="LineageOS-for-Galaxy-Tab-A-with-SPen/android_device_samsung_wisdom" path="device/samsung/wisdom" remote="github" revision="lineage-20" />
     <project name="LineageOS-for-Galaxy-Tab-A-with-SPen/android_device_samsung_universal7904-common" path="device/samsung/universal7904-common" remote="github" revision="lineage-20" />
     <project name="LineageOS-for-Galaxy-Tab-A-with-SPen/proprietary_vendor_samsung_wisdom" path="vendor/samsung/wisdom" remote="github" revision="lineage-20" />
@@ -11,4 +13,5 @@
     <project name="LineageOS/android_hardware_samsung_slsi-linaro_config" path="hardware/samsung_slsi-linaro/config" remote="github" revision="lineage-20" />
     <project name="LineageOS/android_hardware_samsung_slsi_scsc_wifibt_wifi_hal" path="hardware/samsung_slsi/scsc_wifibt/wifi_hal" remote="github" revision="lineage-20" />
     <project name="LineageOS/android_hardware_samsung_slsi_scsc_wifibt_wpa_supplicant_lib" path="hardware/samsung_slsi/scsc_wifibt/wpa_supplicant_lib" remote="github" revision="lineage-20" />
+    <project name="LeCmnGend/clang" path="prebuilts/clang/host/linux-x86/clang-proton" remote="gitlab" revision="clang-15" />
 </manifest>
