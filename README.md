@@ -11,9 +11,7 @@ Init the base manifest
 
 ```bash
 repo init -u https://github.com/LineageOS/android.git -b lineage-20.0 --git-lfs --depth=1
-cd .repo 
-git clone https://github.com/eun0115/local_manifests -b wisdom
-cd ..
+git clone https://github.com/eun0115/local_manifests -b wisdom .repo/local_manifests
 ```
 
 Then sync up with this command:
