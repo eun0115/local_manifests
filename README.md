@@ -10,15 +10,15 @@ cd los
 Init the base manifest
 
 ```bash
-repo init -u https://github.com/LineageOS/android.git -b lineage-21.0 --git-lfs --depth=1
+repo init -u https://github.com/LineageOS/android.git -b lineage-20.0 --git-lfs --depth=1
 cd .repo 
-git clone https://github.com/eun0115/local_manifests -b m20lte
+git clone https://github.com/eun0115/local_manifests -b wisdom
 cd ..
 ```
 
 Then sync up with this command:
 ```bash
-repo sync -c -j60 --force-sync --no-clone-bundle --no-tags --optimized-fetch
+repo sync -c -v --force-sync --no-clone-bundle --no-tags --optimized-fetch
 ```
 -------------
 
@@ -32,6 +32,6 @@ _Building from source_
 ---------------
 ```bash
 . build/envsetup.sh
-lunch lineage_m20lte-ap2a-userdebug
+lunch lineage_wisdom-userdebug
 make bacon
 ```
